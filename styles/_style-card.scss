@@ -1,0 +1,26 @@
+.order-summary__wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  .order-summary__card {
+    margin-top: 7rem;
+    width: 89%;
+    border-radius: 14px;
+    background: $pureWhite;
+    .hero-image {
+      width: 100%;
+      border-radius: 14px 14px 0 0;
+    }
+    .order-summary__details {
+      display: flex;
+      flex-direction: column;
+
+      .order-summary__plan {
+        display: flex;
+      }
+    }
+  }
+}
