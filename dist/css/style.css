@@ -34,6 +34,7 @@ body {
 
 .order-summary__wrapper .order-summary__card {
   margin-top: 7rem;
+  max-width: 450px;
   width: 88%;
   border-radius: 16px;
   background: #fafafa;
@@ -174,5 +175,48 @@ body {
 
 .order-summary__wrapper .order-summary__card .order-summary__details .order-cancel a:hover {
   color: #1f2f56;
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    background-image: url("/images/pattern-background-desktop.svg");
+  }
+  .order-summary__wrapper {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .order-summary__wrapper .order-summary__card {
+    margin-top: unset;
+  }
+  .order-summary__wrapper .order-summary__card .order-summary__details {
+    padding: 4rem 4.5rem;
+  }
+  .order-summary__wrapper .order-summary__card .order-summary__details .title {
+    font-size: 2.8rem;
+  }
+  .order-summary__wrapper .order-summary__card .order-summary__details .description {
+    font-size: 1.6rem;
+    line-height: 2.55rem;
+  }
+  .order-summary__wrapper .order-summary__card .order-summary__details .order-summary__plan {
+    padding: 2.2rem 2.4rem;
+    margin: 0.4rem;
+  }
+  .order-summary__wrapper .order-summary__card .order-summary__details .order-summary__plan .order-plan__container,
+  .order-summary__wrapper .order-summary__card .order-summary__details .order-summary__plan .order-plan__items {
+    gap: 2.2rem;
+  }
+  .order-summary__wrapper .order-summary__card .order-summary__details .order-summary__plan .order-plan__container .order-plan__annualPrice,
+  .order-summary__wrapper .order-summary__card .order-summary__details .order-summary__plan .order-plan__items .order-plan__annualPrice {
+    font-size: 1.6rem;
+  }
+  .order-summary__wrapper .order-summary__card .order-summary__details .order-summary__plan .order-plan__container a,
+  .order-summary__wrapper .order-summary__card .order-summary__details .order-summary__plan .order-plan__items a {
+    font-size: 1.5rem;
+  }
+  .order-summary__wrapper .order-summary__card .order-summary__details .order-proceed {
+    margin: 3rem 0 2.4rem 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,45 @@
+@media screen and (min-width: 1440px) {
+  body {
+    background-image: url("/images/pattern-background-desktop.svg");
+  }
+
+  .order-summary__wrapper {
+    align-items: center;
+
+    .order-summary__card {
+      margin-top: unset;
+
+      .order-summary__details {
+        padding: 4rem 4.5rem;
+
+        .title {
+          font-size: 2.8rem;
+        }
+        .description {
+          font-size: 1.6rem;
+          line-height: 2.55rem;
+        }
+
+        .order-summary__plan {
+          padding: 2.2rem 2.4rem;
+          margin: 0.4rem;
+
+          .order-plan__container,
+          .order-plan__items {
+            gap: 2.2rem;
+            .order-plan__annualPrice {
+              font-size: 1.6rem;
+            }
+
+            a {
+              font-size: 1.5rem;
+            }
+          }
+        }
+        .order-proceed {
+          margin: 3rem 0 2.4rem 0;
+        }
+      }
+    }
+  }
+}
