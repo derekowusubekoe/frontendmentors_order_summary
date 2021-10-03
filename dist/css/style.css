@@ -34,8 +34,8 @@ body {
 
 .order-summary__wrapper .order-summary__card {
   margin-top: 7rem;
-  width: 89%;
-  border-radius: 14px;
+  width: 88%;
+  border-radius: 16px;
   background: #fafafa;
 }
 
@@ -52,11 +52,127 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3rem;
+}
+
+.order-summary__wrapper .order-summary__card .order-summary__details .title {
+  font-size: 2.2rem;
+  font-weight: 900;
+}
+
+.order-summary__wrapper .order-summary__card .order-summary__details .description {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #7280a7;
+  padding: 1.6rem;
+  line-height: 2.4rem;
+  text-align: center;
 }
 
 .order-summary__wrapper .order-summary__card .order-summary__details .order-summary__plan {
+  width: 100%;
+  background-color: #f5f7ff;
+  border-radius: 1.5rem;
+  padding: 1.6rem 1.2rem;
+  margin: 0.8rem 0;
+}
+
+.order-summary__wrapper .order-summary__card .order-summary__details .order-summary__plan .order-plan__container,
+.order-summary__wrapper .order-summary__card .order-summary__details .order-summary__plan .order-plan__items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 2rem;
+}
+
+.order-summary__wrapper .order-summary__card .order-summary__details .order-summary__plan .order-plan__annualPrice {
+  color: #1f2f56;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  font-weight: 900;
+}
+
+.order-summary__wrapper .order-summary__card .order-summary__details .order-summary__plan .plan-price {
+  font-weight: 700;
+  color: #7280a7;
+  font-size: 1.4rem;
+  opacity: 0.5;
+}
+
+.order-summary__wrapper .order-summary__card .order-summary__details .order-summary__plan a {
+  color: #3829e0;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.order-summary__wrapper .order-summary__card .order-summary__details .order-summary__plan a:hover {
+  text-decoration: none;
+  opacity: 0.75;
+}
+
+.order-summary__wrapper .order-summary__card .order-summary__details .order-proceed,
+.order-summary__wrapper .order-summary__card .order-summary__details .order-cancel {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.order-summary__wrapper .order-summary__card .order-summary__details .order-proceed {
+  cursor: pointer;
+  background-color: #3829e0;
+  margin: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 1.2rem;
+  -webkit-box-shadow: 10px 10px 20px rgba(56, 41, 224, 0.1), 15px 15px 30px rgba(56, 41, 224, 0.1) .order-summary__wrapper .order-summary__card .order-summary__details .order-proceed;
+          box-shadow: 10px 10px 20px rgba(56, 41, 224, 0.1), 15px 15px 30px rgba(56, 41, 224, 0.1) .order-summary__wrapper .order-summary__card .order-summary__details .order-proceed;
+}
+
+.order-summary__wrapper .order-summary__card .order-summary__details .order-proceed :hover {
+  opacity: 0.7;
+}
+
+.order-summary__wrapper .order-summary__card .order-summary__details .order-proceed a {
+  text-decoration: none;
+  color: #fafafa;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.order-summary__wrapper .order-summary__card .order-summary__details .order-cancel {
+  padding: 0.8rem;
+}
+
+.order-summary__wrapper .order-summary__card .order-summary__details .order-cancel a {
+  color: #7280a7;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.order-summary__wrapper .order-summary__card .order-summary__details .order-cancel a:hover {
+  color: #1f2f56;
 }
 /*# sourceMappingURL=style.css.map */
