@@ -146,11 +146,11 @@ body {
   margin: 1.5rem;
   padding: 1.5rem;
   border-radius: 1.2rem;
-  -webkit-box-shadow: 10px 10px 20px rgba(56, 41, 224, 0.1), 15px 15px 30px rgba(56, 41, 224, 0.1) .order-summary__wrapper .order-summary__card .order-summary__details .order-proceed;
-          box-shadow: 10px 10px 20px rgba(56, 41, 224, 0.1), 15px 15px 30px rgba(56, 41, 224, 0.1) .order-summary__wrapper .order-summary__card .order-summary__details .order-proceed;
+  -webkit-box-shadow: 10px 10px 20px rgba(56, 41, 224, 0.1), 15px 15px 30px rgba(56, 41, 224, 0.1);
+          box-shadow: 10px 10px 20px rgba(56, 41, 224, 0.1), 15px 15px 30px rgba(56, 41, 224, 0.1);
 }
 
-.order-summary__wrapper .order-summary__card .order-summary__details .order-proceed :hover {
+.order-summary__wrapper .order-summary__card .order-summary__details .order-proceed:hover {
   opacity: 0.7;
 }
 
