@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: hsl(225, 100%, 98%);
+  width: 1440px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.desktop-view {
+  width: 100%;
+  background-color: hsl(225, 100%, 94%);
+}
+
+.order-summary__body {
+  width: 600px;
+  max-width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
