@@ -3,18 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
     <title>Frontend Mentor | Order Summary Card</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,10 +20,10 @@
   </head>
   <body>
     <div class="order-summary__wrapper">
-      <div class="order-summary__card">
+      <main class="order-summary__card">
         <img
           class="hero-image"
-          src="/images/illustration-hero.svg"
+          src="images/illustration-hero.svg"
           alt="illustration hero image"
         />
         <div class="order-summary__details">
@@ -42,8 +37,11 @@
           <div class="order-summary__plan">
             <div class="order-plan__container">
               <div class="order-plan__items">
-                <img src="/images/icon-music.svg" alt="music symbol" />
-
+                <img
+                  aria-hidden="true"
+                  src="images/icon-music.svg"
+                  alt="music symbol"
+                />
                 <div class="order-plan__annualPrice">
                   <div class="plan-title">Annual Plan</div>
                   <div class="plan-price">$59.99/year</div>
@@ -55,7 +53,7 @@
           <div class="order-proceed"><a href="#">Proceed to Payment</a></div>
           <div class="order-cancel"><a href="#">Cancel Order</a></div>
         </div>
-      </div>
+      </main>
     </div>
   </body>
 </html>
